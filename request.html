@@ -1,0 +1,31 @@
+<html>
+    <title>an alpha original</title>
+<head>
+    <h1>REQUEST FOR VERIFICATION</h1>
+    <h2></h2>
+<hr/>
+</head>
+<body>
+    <script>
+        function passvalues()
+        {
+            var firstname=document.getElementById("txt").value;
+            localStorage.setItem("textvalue",firstname);
+            var firstname=document.getElementById("txt1").value;
+            localStorage.setItem("textvalue1",firstname);
+            var firstname=document.getElementById("txt2").value;
+            localStorage.setItem("textvalue2",firstname);
+            var firstname=document.getElementById("txt3").value;
+            localStorage.setItem("textvalue3",firstname);
+            return false;
+        }
+    </script>
+<form action="receiver.html">
+  <input type="text" id="txt" placeholder="name"/>
+  <input type="text" id="txt1" placeholder="email"/>
+  <input type="text" id="txt2" placeholder="draft for verification"/>
+  <input type="text" id="txt3" placeholder="points to be consider"/>
+  <input type="submit" value="Click" onclick="passvalues();"/>
+  </form>
+</body>
+</html>
